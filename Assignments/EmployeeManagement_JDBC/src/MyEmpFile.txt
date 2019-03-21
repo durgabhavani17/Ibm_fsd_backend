@@ -1,0 +1,6 @@
+bhavani,450000,1976-04-03,java,it
+durga,6750000,1945-04-03,java,it
+vandana,2340000,1956-04-03,java,it
+lavanya,870000,1955-04-03,java,operations
+pallavi,670000,1986-04-03,java,admin
+divya,350000,1985-04-03,java,admin
