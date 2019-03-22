@@ -1,4 +1,4 @@
-package com.example.java.lambda;
+package LambdaCalculator;
 
 import java.util.function.BiFunction;
 
