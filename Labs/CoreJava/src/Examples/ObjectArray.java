@@ -1,11 +1,11 @@
-package EmployeeManager;
+package Examples;
 
-public class Employee {
+public class ObjectArray {
    int id;
    String name;
    int age;
    int salary;
-public Employee(int id, String name, int age, int salary) {
+public ObjectArray(int id, String name, int age, int salary) {
 	super();
 	this.id = id;
 	this.name = name;

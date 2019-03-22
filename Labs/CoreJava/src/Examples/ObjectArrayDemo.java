@@ -1,13 +1,13 @@
-package EmployeeMaanger01;
+package Examples;
 
-public class EmployeeManager {
+public class ObjectArrayDemo {
 
 	public static void main(String[] args) {
-		Employee emp=new Employee(1234,"durga",20,30000);
-		Employee emp2=new Employee(1235,"murali",26,60000);
-		Employee emp3=new Employee(1236,"vandana",19,30000);
-		Employee emp4=new Employee(1237,"rathna",20,90000);
-		Employee[] empp=new Employee[] {emp,emp2,emp3};
+		ObjectArray emp=new ObjectArray(1234,"durga",20,30000);
+		ObjectArray emp2=new ObjectArray(1235,"murali",26,60000);
+		ObjectArray emp3=new ObjectArray(1236,"vandana",19,30000);
+		ObjectArray emp4=new ObjectArray(1237,"rathna",20,90000);
+		ObjectArray[] empp=new ObjectArray[] {emp,emp2,emp3};
 		System.out.println("*******employee details********");
 		   
 		for(int i=0;i<3;i++) {
