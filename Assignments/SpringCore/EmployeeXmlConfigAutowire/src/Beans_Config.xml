@@ -1,0 +1,40 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="employee" class="SimpleEmployee.Employee" autowire="constructor">
+		<constructor-arg type="Integer" value="101"></constructor-arg>
+		<constructor-arg type="String" value="bhavani"></constructor-arg>
+
+		<property name="age" value="30" />
+		<property name="designation" value="developer"></property>
+		
+		<property name="skills">
+			<list>
+				<value>Java</value>
+				<value>Oracle</value>
+				<value>Mysql</value>
+
+			</list>
+		</property>
+		
+
+		<property name="dob" ref="date"></property>
+		<property name="contractor" value="true"></property>
+		
+	</bean>
+
+	<bean id="date" class="java.time.LocalDate" factory-method="parse">
+		<constructor-arg index="0" value="1997-07-04"></constructor-arg>
+
+	</bean>
+	<bean id="address" class="SimpleEmployee.Address">
+		<constructor-arg type="String" value="Annatapur"></constructor-arg>
+		<constructor-arg type="String" value="India"></constructor-arg>
+		<constructor-arg type="Integer" value="515741"></constructor-arg>
+	</bean>
+
+
+</beans>
