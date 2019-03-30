@@ -2,5 +2,5 @@
 *.project
 *.classpath
 *.metadata
-*.bin
-*.lib
+/bin/
+/lib/
