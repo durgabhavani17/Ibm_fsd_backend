@@ -1,0 +1,54 @@
+<style type="text/css">
+input{
+  display: table;
+  height: 30px;
+  width: 500px;background-color:lightgray;
+  border: none;
+}
+input[type=checkbox]{
+height: 15px;
+width:15px;
+}
+</style>
+<div class="col-md-6">
+  <h2 class="text-center">Add Employee</h2>
+<form>
+  <div class="form-group">
+    <label for="name">Name :</label>
+    <input type="text" [(ngModel)]="employee.name" placeholder="Name" name="name" class="form-control" id="name">
+  </div>
+
+  <div class="form-group">
+    <label for="age">Age:</label>
+    <input [(ngModel)]="employee.age" placeholder="AGE" name="age" class="form-control" id="age">
+  </div>
+  <div class="form-group">
+    <label for="gender">Gender :</label>
+    <input type="text" [(ngModel)]="employee.gender" placeholder="gender" name="gender" class="form-control" id="gender">
+  </div>
+  <div class="form-group">
+    <label for="contractor">Contractor :</label>
+    <input type="checkbox" [(ngModel)]="employee.contractor" placeholder="contractor" name="contractor" class="form-control" id="contractor">
+  </div>
+
+  <div class="form-group">
+    <label for="department">Department:</label>
+    <input [(ngModel)]="employee.department" placeholder="Department" name="department" class="form-control" id="department">
+  </div>
+  <div class="form-group">
+    <label for="designation">Designation :</label>
+    <input type="text" [(ngModel)]="employee.designation" placeholder="designation" name="designation" class="form-control" id="designation">
+  </div>
+  <div class="form-group">
+    <label for="address">Address :</label>
+    <input type="text" [(ngModel)]="employee.address" placeholder="address" name="address" class="form-control" id="address">
+  </div>
+
+  <div class="form-group">
+    <label for="country">Country:</label>
+    <input [(ngModel)]="employee.country" placeholder="country" name="country" class="form-control" id="country">
+  </div>
+
+  <button style="background-color: green;width: 50px;height: 30px;" (click)="createEmployee()">Create</button>
+</form>
+</div>
